@@ -1,0 +1,22 @@
+# Ignore arquivos de build e dependências
+bin/
+obj/
+*.user
+*.suo
+*.log
+
+# Ignore configurações locais
+.vscode/
+launchSettings.json
+
+# Ignore configurações sensíveis
+appsettings.json
+appsettings.Production.json
+
+# Ignore pacotes
+*.nupkg
+packages/
+
+# Outros arquivos que não precisam ir pro repositório
+*.db
+.env
