@@ -3,11 +3,11 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 COPY *.sln .
-COPY PokemonCardsAPI/*.csproj ./POKEMONCARDSAPI/
+COPY PokemonCardsAPI/*.csproj ./PokemonCardsAPI/
 RUN dotnet restore
 
 COPY . .
-WORKDIR /app/POKEMONCARDSAPI
+WORKDIR /app/PokemonCardsAPI
 RUN dotnet publish -c Release -o /out
 
 # Etapa de runtime
