@@ -10,4 +10,4 @@ services:
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
       - key: ConnectionStrings__DefaultConnection
-        value: Server=DESKTOP-UOPVNVH;Database=db_tcgpokemon_cards;User Id=api_user;Password=SenhaForte123@;Encrypt=True;
+        value: "Server=DESKTOP-UOPVNVH;Database=db_tcgpokemon_cards;User Id=api_user;Password=SenhaForte123@;Encrypt=True;"
