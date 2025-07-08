@@ -11,7 +11,7 @@ launchSettings.json
 
 # Ignore configurações sensíveis
 appsettings.json
-appsettings.Production.json
+# appsettings.Production.json
 
 # Ignore pacotes
 *.nupkg
