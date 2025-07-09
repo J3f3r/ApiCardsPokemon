@@ -5,12 +5,14 @@ WORKDIR /app
 COPY . ./
 RUN dotnet restore
 RUN ls -la
-RUN dotnet publish -c Release -o /out
+RUN dotnet publish -c Release -o /publish
+
 
 # Etapa de runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /out ./
+COPY --from=build /publish ./
+
 
 ENV ASPNETCORE_URLS=http://+:8080
 EXPOSE 8080

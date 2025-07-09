@@ -28,4 +28,6 @@ app.UseAuthorization();    // Prepara o app para autenticação/autorização (p
 
 app.MapControllers();      // Mapeia os Controllers para que os endpoints funcionem
 
+Console.WriteLine("🚀 API PokemonCardsAPI iniciando...");
+
 app.Run(); // Inicia a aplicação
