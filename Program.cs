@@ -22,7 +22,7 @@ var app = builder.Build();
 app.UseSwagger();    // Ativa Swagger no projeto
 app.UseSwaggerUI();  // Mostra a interface Swagger
 
-app.UseHttpsRedirection(); // Redireciona requisições HTTP para HTTPS (segurança)
+//app.UseHttpsRedirection(); // Redireciona requisições HTTP para HTTPS (segurança)
 
 app.UseAuthorization();    // Prepara o app para autenticação/autorização (pode configurar depois)
 
