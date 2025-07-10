@@ -22,7 +22,10 @@ var app = builder.Build();
 app.UseSwagger();    // Ativa Swagger no projeto
 app.UseSwaggerUI();  // Mostra a interface Swagger
 
-//app.UseHttpsRedirection(); // Redireciona requisições HTTP para HTTPS (segurança)
+//app.UseHttpsRedirection(); // Redireciona requisições HTTP para HTTPS (segurança) mas  O Render já gerencia o HTTPS para você, e não comentar gera redundância
+
+// **ADICIONE ESTA LINHA AQUI PARA RESPONDER NA ROTA RAIZ (`/`)**
+app.MapGet("/", () => "API Pokemon Cards está funcionando! Acesse /swagger para a documentação.");
 
 app.UseAuthorization();    // Prepara o app para autenticação/autorização (pode configurar depois)
 
